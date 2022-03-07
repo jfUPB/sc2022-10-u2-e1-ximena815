@@ -78,7 +78,8 @@ void arrayCommon(struct array *arrIn1, struct array *arrIn2, struct array *arrOu
                 }
 
                 bool = 0; 
-            }       
+            }
+    }        
 }
 
 void freeMemory(struct array *arr1, struct array *arr2, struct array *arr3)
