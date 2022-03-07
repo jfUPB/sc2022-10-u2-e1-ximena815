@@ -74,12 +74,15 @@ void arrayCommon(struct array *arrIn1, struct array *arrIn2, struct array *arrOu
                 if (bool != 1)
                 {
                     *(arrOut->pdata + tam) = *(arrIn1->pdata + i);
-                    tam++;         
+                        tam++;         
                 }
 
                 bool = 0; 
-            }
-    }        
+            }      
+    }
+
+    arrOut->size = tam;
+    arrOut->pdata = realloc(arrOut->pdata, sizeof(int) * tam); 
 }
 
 void freeMemory(struct array *arr1, struct array *arr2, struct array *arr3)
